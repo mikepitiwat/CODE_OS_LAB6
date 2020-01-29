@@ -46,7 +46,7 @@ Queue sortQ(){                //เรียงข้อมูลจากน้
     int j;
     for (int i = 1; i <SP ; ++i) {
         j = i+1;
-        if(Q[i].Priority < Q[j].Priority){
+        if(Q[i].Priority <= Q[j].Priority){
             tempP = Q[i];
             Q[i]  = Q[j];
             Q[j]  = tempP;
