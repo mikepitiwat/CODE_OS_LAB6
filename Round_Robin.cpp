@@ -177,6 +177,7 @@ void calNT(){
 int main(){
     calNT();
     printf("# Mr Pitiwat Promnimit ID:61543206020-5\n");
+    printf("# Mr Prakotkan Pochom  ID:61543206023-1\n");
     printf("# OUTPUT LAB6 CPU Scheduling\n");
     printf("# Round Robin\n");
     printf("Sequence process is :");
