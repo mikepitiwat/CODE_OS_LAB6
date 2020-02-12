@@ -94,7 +94,7 @@ void SJF_P(){
                     runningP = indexP;           //โปรเซสที่กำลังทำงานฃ
                     getData(indexP,i);           //เก็บข้อมูลโปรเซส
                 }else{                           //ณ เวลาที่ i ถ้ามีโปรเซสลกำลังทำงาน(มีการใช้ทรัพยากร) หรือ มีโปรเซสออยู่ในคิว
-                    if(P[indexP].BurtT < (P[runningP].BurtT-i) && i < ENDpro){//ให้เช็คว่าโปรเซสที่เกิดใหม่ใช้เวลาทำงานน้อยกว่า โปรเซสที่กำลังทำงานใช่หรือไม่
+                    if(P[indexP].BurtT < (P[runningP].BurtT-i)  && i < ENDPro){//ให้เช็คว่าโปรเซสที่เกิดใหม่ใช้เวลาทำงานน้อยกว่า โปรเซสที่กำลังทำงานใช่หรือไม่
                         pushSynchronous(indexP,tempP,countP);
                         push(runningP, (P[runningP].BurtT - i));  //เก็บโปรเซสที่กำลังทำงานไว้ในคิว และเวลาทำงานที่เหลือ
                         ENDPro = i + P[indexP].BurtT;
