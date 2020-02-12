@@ -83,7 +83,7 @@ void getData(int indexP, int time_i){
     NG++;
 }
 
-void SJF_P(){
+void P_Priority(){
     int indexP = 0, ENDPro = 0, runningP = 0;
     int tempP[NP], countP = 0;
     for (int i = 0; i <= NT; ++i) {              //i แทนเวลา (Time)
@@ -157,7 +157,7 @@ int main(){
     printf("# OUTPUT LAB6 CPU Scheduling\n");
     printf("# Priority (SJF Preemptive) \n");
     printf("Sequence process is :");
-    SJF_P();
+    P_Priority();
     for (int i = 0; i <NG ; i++) {
         printf("P%d", Gantt[i].indexP);
         if(i<NG-1)
