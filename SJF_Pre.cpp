@@ -113,6 +113,7 @@ void SJF_P(){
             indexPQ = sortQ();                    //เรียงโปรเซสในคิว โดยดูจากโปรเซสที่ใช้เวลาการทำงานน้อยที่สุด
             pop();                               //นำโปรเซสออกจากคิว
             ENDPro = i + indexPQ.BurtT;
+            runningP = indexPQ.indexP;
             getData(indexPQ.indexP,i);
         }
     }
