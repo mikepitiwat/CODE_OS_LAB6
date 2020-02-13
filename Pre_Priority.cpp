@@ -115,6 +115,7 @@ void P_Priority(){
             indexPQ = sortQ();                    //เรียงโปรเซสในคิว โดยดูจากโปรเซสที่มีลำดับความสำคัญสูงที่สุด
             pop();                               //นำโปรเซสออกจากคิว
             ENDPro = i + indexPQ.BurtT;
+            runningP = indexPQ.indexP;
             getData(indexPQ.indexP,i);
         }
     }
